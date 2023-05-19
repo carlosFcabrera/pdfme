@@ -47,6 +47,30 @@ const dictJa: { [key in keyof DictEn]: string } = {
   bulkUpdateFieldName: '項目名を一括変更',
 };
 
+const dictEs: { [key in keyof DictEn]: string } = {
+  cancel: 'Cancelar',
+  field: 'campo',
+  fieldName: 'Nombre del Campo',
+  require: 'Necesario',
+  uniq: 'Unico',
+  inputExample: 'Input',
+  edit: 'Editar',
+  plsInputName: 'PorFavor incluya un nombre',
+  fieldMustUniq: 'El nombre del campo no es unico',
+  notUniq: '(El nombre no es unico)',
+  noKeyName: 'Sin nombre',
+  fieldsList: 'Lista de campos',
+  addNewField: 'Agregue un Nuevo Campo',
+  editField: 'Editar Campo',
+  type: 'Tipo',
+  errorOccurred: 'Ha ocurrido un error',
+  errorBulkUpdateFieldName:
+  'No se puede actualizar el cambio porque el numero de elementos ha cambiado',
+    
+  commitBulkUpdateFieldName: 'Actualizar Cambios',
+  bulkUpdateFieldName: 'Actualizar masivamente los campos',
+};
+
 const dictAr: { [key in keyof DictEn]: string } = {
   cancel: 'إلغاء',
   field: 'الحقل',
@@ -71,8 +95,8 @@ const dictAr: { [key in keyof DictEn]: string } = {
 
 const i18n = (lang: Lang, key: keyof DictEn) => {
   switch (lang) {
-    case 'ar':
-      return dictAr[key];
+    case 'es':
+      return dictEs[key];
 
     case 'ja':
       return dictJa[key];
