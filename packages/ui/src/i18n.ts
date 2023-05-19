@@ -95,14 +95,14 @@ const dictAr: { [key in keyof DictEn]: string } = {
 
 const i18n = (lang: Lang, key: keyof DictEn) => {
   switch (lang) {
-    case 'es':
-      return dictEs[key];
+    case 'en':
+      return dictEn[key];
 
     case 'ja':
       return dictJa[key];
 
     default:
-      return dictEn[key];
+      return dictEs[key];
   }
 };
 
